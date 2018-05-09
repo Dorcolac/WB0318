@@ -1,22 +1,6 @@
 @import "reset";
 @import "global";
-
-body main {
-	background-color: $druga_boja;
-
-	h1 {
-		color: $glavna_boja;
-
-		span {
-			color: $druga_boja;
-		}
-	}
-
-	p {
-		color: $glavna_boja;
-	}
-
-	h2 {
-		color: $glavna_boja;
-	}
-}
+@import "alex";
+@import "danica";
+@import "kristina";
+@import "igor";
