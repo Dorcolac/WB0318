@@ -1,2 +1,12 @@
 $glavna_boja: #15a8a0;
 $sporedna_boja: #592214;
+
+%em {
+	background-color: green;
+	border: 10px solid red;
+}
+
+@mixin strong($value) {
+	color: $value;
+	text-decoration: underline;
+}
