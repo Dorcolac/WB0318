@@ -21,3 +21,15 @@
 // div {
 // 	@extend %em;
 // }
+
+header#nikola-nav {
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 200px;
+	background-color: #ed1c24;
+}
+
+header#nikola-nav * {
+	color: #fff;
+}
