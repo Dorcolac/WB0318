@@ -1,31 +1,47 @@
 
 
 
-nav ul {
-	background-color: orange;
+.topnav nav ul {
+
 	display: flex;
 	justify-content:center;
+	
 
 
-li {
-	display:inline-block;
-	padding:10px;
-	background-color: black;
+	
 
-	a {
-		display: inline-block;
-		color:white;
-		font-family: arial;
-		font-size:16px;
-		text-transform: uppercase;
-	}	
 
+	li {
+		display:inline-block;
+		padding:10px;
+		background-color: black;
+		margin:0px 5px;
+
+		
+
+
+		a {
+			display: inline-block;
+			color:white;
+			font-family: helvetica;
+			font-size:16px;
+			text-transform: uppercase;
+			text-decoration: none;
+		}	
+
+
+
+	}
 
 
 }
 
+.topnav li:hover {
+	background-color: orange;
 
 }
 
-}
+
+
+
 
