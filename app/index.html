@@ -14,12 +14,12 @@
 	<header id="nikola-nav">
 		<nav>
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Work</a></li>
-				<li><a href="">Store</a></li>
-				<li><a href="">Blog</a></li>
-				<li><a href="">Contact</a></li>
+				<li><span>------</span><a href="">Home</a></li>
+				<li><span>------</span><a href="">About</a></li>
+				<li><span>------</span><a href="">Work</a></li>
+				<li><span>------</span><a href="">Store</a></li>
+				<li><span>------</span><a href="">Blog</a></li>
+				<li><span>------</span><a href="">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,5 +30,19 @@
 	<div><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. At sit officia modi mollitia alias voluptates tempore, <span>repellat laborum</span> dolores <span>reprehenderit impedit</span>, facilis dicta dolorem est dignissimos doloribus, minus saepe libero.</div>
 
 	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolore temporibus quasi nisi enim eveniet, fugit minus harum eum praesentium atque, soluta cupiditate neque officiis cumque maiores hic suscipit quae.</div> -->
+
+	<script>
+		document.querySelector("div#nikola-logo").addEventListener("mouseover", function() {
+				document.querySelector("header#nikola-nav").style.left = 0;
+				document.querySelector("div#nikola-logo span:first-of-type").classList.remove("visible");
+				document.querySelector("div#nikola-logo span:last-of-type").classList.add("visible");
+		})
+
+		document.querySelector("header#nikola-nav").addEventListener("mouseleave", function () {
+				document.querySelector("header#nikola-nav").style.left = "-200px";
+				document.querySelector("div#nikola-logo span:first-of-type").classList.add("visible");
+				document.querySelector("div#nikola-logo span:last-of-type").classList.remove("visible");
+		})
+	</script>
 </body>
 </html>

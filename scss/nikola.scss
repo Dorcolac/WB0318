@@ -24,7 +24,7 @@ html, body {
 			display: none;
 			line-height: 34px;
 			vertical-align: middle;
-			margin-left: 12px;
+			margin-left: 16px;
 		}
 
 		.visible {
@@ -38,11 +38,12 @@ html, body {
 		z-index: 1;
 		display: inline-block;
 		position: absolute;
-		left: 0;
+		left: -200px;
 		top: 0;
 		height: 100%;
 		width: 200px;
 		background-color: #ed1c24;
+		transition: .5s;
 		* {
 			color: #fff;
 			text-transform: uppercase;
@@ -50,7 +51,33 @@ html, body {
 
 		nav {
 			margin-top: 50px;
+			
+			ul {
+				list-style-type: none;
+
+				li {
+					position: relative;
+
+					span {
+						position: absolute;
+						left: -40px;
+						transition: .2s;
+					}
+
+					a {
+						text-decoration: none;
+						font-size: 14px;
+						font-family: "Arial", sans-serif;
+						margin-left: 50px;
+					}
+				}
+
+				li:hover span {
+					left: 0;
+				}
+			}
 		}
+
 	}
 
 }
