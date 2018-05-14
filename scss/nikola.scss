@@ -1,35 +1,56 @@
-// nav {
-// 	@extend %glavna_pozadina;
-// 	ul {
-// 		li {
-// 			a {
-// 				text-decoration: none;
-// 				color: $glavna_boja;
-// 			}
-// 		}
-// 	}
-// }
-
-// p span {
-// 	@include strong(yellow);
-// }
-
-// div span {
-// 	@include strong(red);
-// }
-
-// div {
-// 	@extend %em;
-// }
-
-header#nikola-nav {
-	position: absolute;
-	left: 0;
+html, body {
 	height: 100%;
-	width: 200px;
-	background-color: #ed1c24;
-}
+	background-color: #ddd;
 
-header#nikola-nav * {
-	color: #fff;
+	div#nikola-logo {
+		width: 100px;
+		display: inline-block;
+		cursor: pointer;
+		text-transform: uppercase;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		color: #fff;
+		font-family: "Arial", sans-serif;
+
+		img {
+			height: 34px;
+		}
+
+		span {
+			font-size: 14px;
+			height: 34px;
+			display: none;
+			line-height: 34px;
+			vertical-align: middle;
+			margin-left: 12px;
+		}
+
+		.visible {
+			display: inline-block;
+			position: absolute;
+		}
+
+	}
+
+	header#nikola-nav {
+		z-index: 1;
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 200px;
+		background-color: #ed1c24;
+		* {
+			color: #fff;
+			text-transform: uppercase;
+		}
+
+		nav {
+			margin-top: 50px;
+		}
+	}
+
 }
