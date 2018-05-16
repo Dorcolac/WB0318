@@ -2,20 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
-	<title>Igor</title>
 </head>
 <body>
-	<header>
-		<div class="container topnav">
-			<nav>
-				<ul>
-					<li><a href="danica.html">danica</a></li>
-					<li><a href="kristina.html">kristina</a></li>
-					<li><a href="alex.html">alex</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<div class="topmenu">
+		<img src="img/logo.jpg" alt="">
+		<span class="visible">home</span>
+		<span>menu</span>
+	</div>
+	<div class="mainmenu">
+		<nav>
+			<ul>
+				<li><span>--------></span><a href="">home</a></li>
+				<li><span>--------></span><a href="">about</a></li>
+				<li><span>--------></span><a href="">work</a></li>
+				<li><span>--------></span><a href="">store</a></li>
+				<li><span>--------></span><a href="">contact</a></li>
+			</ul>
+		</nav>
+	</div>
+	<script>
+		document.querySelector(".topmenu").addEventListener("mouseover", function() {
+			document.querySelector(".mainmenu").style.left = 0;
+			document.querySelector(".topmenu span:first-of-type").classList.remove("visible");
+			document.querySelector(".topmenu span:last-of-type").classList.add("visible");
+		})
+		document.querySelector(".mainmenu").addEventListener("mouseleave", function () {
+			document.querySelector(".mainmenu").style.left = "-300px";
+			document.querySelector(".topmenu span:first-of-type").classList.add("visible");
+			document.querySelector(".topmenu  span:last-of-type").classList.remove("visible");
+		})
+		
+	</script>
 </body>
 </html>
